@@ -18,9 +18,9 @@ public class Yorkshire extends Dog
     }
 
 
-    public void waddle()
+    public String waddle()
     {
-        System.out.println(name + " is doing a York waddle");
+        return name + " is doing a York waddle";
     }
 
 }

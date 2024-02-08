@@ -26,6 +26,9 @@ public class Labrador extends Dog
 	return "Labrador barking";
     }
 
+public String waddle(){
+        return name + " is waddling";
+}
 
 
 }
