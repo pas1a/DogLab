@@ -15,21 +15,28 @@ public class Main
 
         ArrayList<Dog> dogArrayList = new ArrayList<Dog>();
 
-	Dog dog = new Dog("Spike");
+	Dog dogs = new Dog("Spike");
     Labrador labrador = new Labrador("Billy", "YELLOW");
     Yorkshire yorkshire = new Yorkshire("yorky",14);
 
-        dogArrayList.add(dog);
+        dogArrayList.add(dogs);
         dogArrayList.add(labrador);
         dogArrayList.add(yorkshire);
 
+        for (int i = 0; i < dogArrayList.size(); i++) {
+          System.out.println(dogArrayList.get(i).bark());
+          
+        }
 
-
-        dogArrayList.forEach((n) -> n.getName();
-
+         for(Dog dog: dogArrayList){
+           System.out.println(dogs.bark());
+         }
+      
+System.out.println(((Yorkshire)yorkshire).waddle());
+        
 
         System.out.println(labrador.getName() + " says " + labrador.bark());
-	System.out.println(dog.getName() + " says " + dog.bark());
+	System.out.println(dogs.getName() + " says " + dogs.bark());
         System.out.println(yorkshire.waddle());
         System.out.println(yorkshire.getName() + " says " + yorkshire.bark());
         System.out.println(labrador.waddle());
